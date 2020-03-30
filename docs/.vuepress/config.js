@@ -1,4 +1,5 @@
 module.exports = {
+    base: '/waipo/',     // 仓库名字是press
     title: '外婆王占才女士',
     description: ' 世界上只有一种真正的英雄主义,那就是认清生活真相依旧热爱生活。-罗曼·罗兰Romain Rolland',
     head: [
@@ -33,9 +34,6 @@ module.exports = {
         children: ['/guide/']
       }         
     ],
-    module.exports = {
-      base: '/waipo/',     // 仓库名字是press
-      themeConfig: {}
-    }        
+    themeConfig: {}
 }
 
