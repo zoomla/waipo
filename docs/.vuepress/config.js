@@ -23,12 +23,23 @@ module.exports = {
     // 主题配置
     theme: 'reco',
     themeConfig: {
+      //sidebar,
+      lastUpdated: '更新于', // string | boolean
+      displayAllHeaders: true, // 默认值：false
+    // 默认值是 true 。设置为 false 来禁用所有页面的 下一篇 链接
+    nextLinks: true,
+    // 默认值是 true 。设置为 false 来禁用所有页面的 上一篇 链接
+    prevLinks: true,      
+      // author
+      author: 'Zoomla!逐浪CMS发哥',
+      // 项目开始时间
+      startYear: '2020',
       nav: [
         { text: '首页', link: '/' },
         { text: '生平', link: '/ShengPing' },
         { text: '日志', link: '/categories/日志/' },
         { text: '祭文', link: '/categories/祭文/' },
-        { text: 'TimeLine', link: '/TimeLIne', icon: 'reco-date' },
+        { text: 'TimeLine', link: '/timeline/', icon: 'reco-date' },
         { text: '本站源码', link: 'https://github.com/zoomla/waipo' },
         // {
         //   text: 'Languages',
@@ -39,6 +50,10 @@ module.exports = {
         // },
         { text: '逐浪CMS', link: 'http://www.z01.com' },
       ],
+      valineConfig: {
+        appId: 'hk05YO1Jj6sBC0iIM10sy3Sd-gzGzoHsz',// your appId
+        appKey: '045YhsXYodGytw7RzVEexBFz', // your appKey
+      },
         blogConfig: {
           category: {
             location: 2,     // 在导航栏菜单中所占的位置，默认2
@@ -50,18 +65,6 @@ module.exports = {
           }
         }        
     },
-    sidebarDepth: 2,
-    sidebar: [
-      {
-        title: 'Guide',
-        collapsable: false,
-        children: ['/guide/']
-      }         
-    ],
-    thirdPartyComponents: {
-  },  
-  
-
   markdown: {
     lineNumbers: true
   },
@@ -152,7 +155,10 @@ module.exports = {
           bottom: '40px',
         },
       },
-    ]
+    ],
+    [
+      "vuepress-plugin-auto-sidebar",
+    ],
 
   ] 
 }

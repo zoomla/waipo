@@ -93,8 +93,9 @@ footer: MIT Licensed | Copyright © 2019-2020 zoomla
 
  这是为外婆建立的永久国际门户，其域名可以通过下面两个地址同步访问： 
 
-- [http://waipo.github.io](http://waipo.gihub.io)
 - [http://waipo.z01.com](http://waipo.z01.com)
+- [https://waipo.github.io](https://waipo.gihub.io)
+
 
 如果你身处国内网速较慢，可以访问国内版镜象：
 - [http://wp.z01.com](http://wp.z01.com)
