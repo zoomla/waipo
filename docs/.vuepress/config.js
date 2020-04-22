@@ -23,6 +23,7 @@ module.exports = {
     // 主题配置
     theme: 'reco',
     themeConfig: {
+    logo: '/images/logo.jpg',
       //sidebar,
       lastUpdated: '更新于', // string | boolean
       displayAllHeaders: true, // 默认值：false
