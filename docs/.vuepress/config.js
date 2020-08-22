@@ -26,7 +26,7 @@ module.exports = {
     logo: '/images/logo.jpg',
       //sidebar,
       lastUpdated: '更新于', // string | boolean
-      displayAllHeaders: true, // 默认值：false
+      //displayAllHeaders: true, // 默认值：false
     // 默认值是 true 。设置为 false 来禁用所有页面的 下一篇 链接
     nextLinks: true,
     // 默认值是 true 。设置为 false 来禁用所有页面的 上一篇 链接
